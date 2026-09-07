@@ -8,18 +8,22 @@ TradingAgent 生成的研究报告资料库，按股票 ticker 和研究日期�
 
 ```text
 <TICKER>/
-└── <TICKER>_<YYYYMMDD>/
-    ├── complete_report.md    # 完整报告
-    ├── 1_analysts/           # 分析师报告
-    ├── 2_research/           # 多空研究与结论
-    ├── 3_trading/            # 交易方案
-    ├── 4_risk/               # 风险讨论
-    └── 5_portfolio/          # 最终决策
+└── <YYYY-MM-DD>/
+    └── reports/
+        ├── final_trade_decision.md
+        ├── trader_investment_plan.md
+        ├── investment_plan.md
+        ├── fundamentals_report.md
+        ├── market_report.md
+        ├── news_report.md
+        └── sentiment_report.md
 ```
 
-日期使用报告自身的研究日期。保留 TradingAgent 的原始输出结构；新增研究放入对应日期目录，历史报告保留。同一天有多次研究时，在目录名后追加 `_HHMMSS` 区分。
+报告来自 TradingAgents 的 `results/<TICKER>/<YYYY-MM-DD>/reports/`，原样保留文件名和正文，仅归档人读 Markdown 报告。运行日志和缓存留在源目录。
 
-保留原始研究内容；如需更正，另加注明日期的勘误，便于追溯。
+阅读时可先看 `final_trade_decision.md`（最终结论），再看 `trader_investment_plan.md`（交易方案）、`investment_plan.md`（研究结论），按需阅读其余分析。
+
+日期使用研究日期；同日内容不同的版本使用 `<YYYY-MM-DD>_HHMMSS` 目录保留，时间采用归档时的本地时间。保留原始研究内容；如需更正，另加注明日期的勘误。
 
 ## 贡献方式
 

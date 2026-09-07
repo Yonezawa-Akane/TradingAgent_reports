@@ -30,9 +30,19 @@ Use the research date stated in each report and preserve TradingAgent's original
 
 ## 维护与使用 / Maintenance and use
 
-新增报告后更新上方索引，通过 Git 在 `main` 上提交并同步到 GitHub。维护时保留原始研究内容；如需更正，另加注明日期的勘误，便于追溯。
+新增报告后更新上方索引。维护时保留原始研究内容；如需更正，另加注明日期的勘误，便于追溯。
 
-Update the index when adding reports, commit changes on `main`, and synchronize with GitHub using Git. Preserve the original research; record corrections in separate dated notes for traceability.
+Update the index when adding reports. Preserve the original research; record corrections in separate dated notes for traceability.
+
+## 贡献方式 / Contributing
+
+欢迎补充研究、提交勘误或改善资料索引。外部贡献者请 fork 本仓库，在自己的 fork 中修改，并提交 **以本仓库 `main` 为目标的 Pull Request**，由维护者 review 后合并。本仓库仅维护 `main` 分支。
+
+Contributions of research, corrections, and index improvements are welcome. Fork this repository, make changes in your fork, and open a **Pull Request targeting this repository's `main` branch**. The maintainer will review and merge it. This repository maintains only `main`.
+
+PR 标题简要写明动作和范围，例如 `Add TSLA research — 2026-09-07`。填写自动加载的 [PR 模板](.github/pull_request_template.md)：勾选目的，用 1–3 句话解释本次改动与原因，并列出涉及的 ticker／日期或文件路径。说明可使用中文或英文。
+
+Use a short PR title describing the action and scope, such as `Add TSLA research — 2026-09-07`. Fill in the automatically loaded [PR template](.github/pull_request_template.md): check the purpose, explain what changed and why in 1–3 sentences, and list the affected tickers/dates or file paths. Chinese or English is welcome.
 
 报告由 AI 生成，可能包含事实错误、过时数据或未经验证的判断，仅供研究与学习，不构成投资建议，也不代表实际交易记录。
 
